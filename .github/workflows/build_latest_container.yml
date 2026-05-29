@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - master
+  # Lets you trigger a build from the Actions tab without a push —
+  # handy right after enabling Actions on a fresh fork.
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
